@@ -201,7 +201,7 @@ const App = () => {
               )}
             </div>
           </div>
-          {selectedFiles.length > 0 && <button onClick={handleSend} className="sendbutton">Send</button>}
+          {selectedFiles.length > 0 && <button onClick={handleSend} disabled={sessionId&&true} className="sendbutton">Send</button>}
         </div>
         <div className="themaincontainer">
           <h1 className="containerheading">Receive</h1>
