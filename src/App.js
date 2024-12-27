@@ -148,7 +148,7 @@ const App = () => {
     <div className="page" style={{backgroundColor: litemode&&("#efeee9")}}>
       <div className="navbar" style={{backgroundColor: litemode&&("#36454f")}}>
         <h1 className="heading">Awesome File Sharing App 🏴‍☠️</h1>
-        <h1 style={{ backgroundColor: "#2d2d2d", color: '#ededed', position: 'absolute', right: 10, fontFamily: "EB Garamond", fontSize: "20px", padding: "10px", borderRadius: "10px", cursor: "pointer"}} onClick={()=>{setlitemode(!litemode)}}>Change Theme</h1>
+        <h1 style={{ backgroundColor: "#2d2d2d", color: '#ededed', position: 'absolute', right: 10, fontFamily: "EB Garamond", fontSize: "20px", fontWeight: 500, padding: "10px", borderRadius: "10px", cursor: "pointer"}} onClick={()=>{setlitemode(!litemode)}}>Change Theme</h1>
       </div>
       <div className="bottomsection">
         <div className="themaincontainer" style={{backgroundColor: litemode&&("#36454f")}}>
