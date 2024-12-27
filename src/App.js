@@ -20,6 +20,7 @@ const App = () => {
   const [loading, setLoading] = useState(false)
   const loadingText = "Loading"
   const [dotCount, setDotCount] = useState(0);
+  const [litemode, setlitemode] = useState(false);
 
   useEffect(() => {
     if (loading) {
@@ -144,12 +145,13 @@ const App = () => {
   };
 
   return (
-    <div className="page">
-      <div className="navbar">
+    <div className="page" style={{backgroundColor: litemode&&("#efeee9")}}>
+      <div className="navbar" style={{backgroundColor: litemode&&("#36454f")}}>
         <h1 className="heading">Awesome File Sharing App 🏴‍☠️</h1>
+        <h1 style={{ backgroundColor: "#2d2d2d", color: '#ededed', position: 'absolute', right: 10, fontFamily: "EB Garamond", fontSize: "20px", padding: "10px", borderRadius: "10px", cursor: "pointer"}} onClick={()=>{setlitemode(!litemode)}}>Change Theme</h1>
       </div>
       <div className="bottomsection">
-        <div className="themaincontainer">
+        <div className="themaincontainer" style={{backgroundColor: litemode&&("#36454f")}}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h1 className="containerheading">Send</h1>
             <input
@@ -168,7 +170,7 @@ const App = () => {
               </div>
             )}
           </div>
-          <div className="filescontainer">
+          <div className="filescontainer" style={{borderColor: litemode&&("#efeee9")}}>
             {selectedFiles.length === 0 && (
               <div className="filescontainerbtn" onClick={handleButtonClick}>
                 <h1 className="sendBtn">+</h1>
@@ -203,9 +205,9 @@ const App = () => {
           </div>
           {selectedFiles.length > 0 && <button onClick={handleSend} disabled={sessionId&&true} className="sendbutton">Send</button>}
         </div>
-        <div className="themaincontainer">
+        <div className="themaincontainer"  style={{backgroundColor: litemode&&("#36454f")}}>
           <h1 className="containerheading">Receive</h1>
-          <div className="filescontainer">
+          <div className="filescontainer" style={{borderColor: litemode&&("#efeee9")}}>
             <div className='inputDivcenter'>
               <input
                 type="text"
