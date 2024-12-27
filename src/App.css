@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  .page {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+  }
+  
+  .bottomsection {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .themaincontainer {
+    padding: 16px;
+    width: 350px;
+    background-color: #0a0a0a;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: #2d2d2d 1px solid;
+  }
+  
+  .mainbuttons {
+    background-color: #9e856a;
+  }
+  
+  .filescontainer {
+    border: #2d2d2d 1px solid;
+    margin-top: 10px;
+    padding: 10px;
+    height: 200px;
+    border-radius: 10px;
+    overflow-y: scroll;
+  }
+  
+  .containerheading {
+    font-family: "EB Garamond";
+    font-size: 28px;
+    font-weight: 500;
+    color: #ededed;
+  }
+  
+  .sendBtn {
+    cursor: pointer;
+    color: #ededed;
+    font-family: "EB Garamond";
+    font-size: 76px;
+  }
+  
+  .navbar {
+    height: 10vh;
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #2d2d2d 1px solid;
+  }
+  
+  .heading {
+    font-size: 32px;
+    font-family: "EB Garamond";
+    font-weight: 500;
+    /* word-spacing: 5px; */
+    color: #ededed;
+  }
+  
+  .filelistitem {
+    font-family: "EB Garamond";
+    font-size: 18px;
+    color: #ededed;
+  }
+  
+  .filescontainerbtn {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .addmoreheading {
+    font-size: 18px;
+    font-family: "EB Garamond";
+    font-weight: 400;
+    background-color: #2d2d2d;
+    color: #ededed;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  .sendbutton {
+    font-size: 18px;
+    font-family: "EB Garamond";
+    font-weight: 500;
+    background-color: #2d2d2d;
+    color: #ededed;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .receiveinp {
+    width: 200px;
+    padding: 10px;
+    font-family: "EB Garamond";
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ededed;
+    color: #1f2e34;
+  }
+  
+  .inputDivcenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .recbtn {
+    font-size: 16px;
+    font-family: "EB Garamond";
+    font-weight: 500;
+    background-color: #2d2d2d;
+    color: #ededed;
+    padding: 10px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .secondlyheading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "EB Garamond";
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: #ededed;
+  }
+  
+  .recfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+  }
+  
+  .recfile p{
+    font-size: 18px;
+    color: #ededed;
+    font-family: "EB Garamond";
+    font-weight: 500;
+  }
+  
+  .recfile button {
+    font-size: 14px;
+    font-family: "EB Garamond";
+    font-weight: 500;
+    background-color: #000000;
+    color: #ededed;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .sessionscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
